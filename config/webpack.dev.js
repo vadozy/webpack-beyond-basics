@@ -3,7 +3,11 @@ const path = require("path");
 module.exports = {
     mode: "development",
     entry: {
-        main: ["./src/main.js"]
+        main: [
+            // "core-js/fn/promise", // just the promise polyfill
+            //"babel-polyfill", // the whole polyfill
+            "./src/main.js"
+        ]
     },
     output: {
         filename: "[name]-bundle.js",
