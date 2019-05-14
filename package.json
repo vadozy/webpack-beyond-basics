@@ -4,8 +4,9 @@
   "description": "Udemy course on webpack beyond basics",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server --config config/webpack.dev.js",
-    "build:dev": "webpack --config config/webpack.dev.js",
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.dev.js",
+    "dev": "node src/server/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +37,9 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.4",
+    "webpack-dev-middleware": "^3.6.2",
+    "webpack-hot-middleware": "^2.24.4"
   }
 }
