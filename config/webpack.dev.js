@@ -24,6 +24,7 @@ module.exports = {
             colors: true // default is already true
         }
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
