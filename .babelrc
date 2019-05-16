@@ -15,7 +15,8 @@
         },
         //"debug": true
       }
-    ]
+    ],
+    "babel-preset-react"
   ],
   "plugins": [
     "transform-runtime"
