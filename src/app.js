@@ -1,4 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Counter from './counter';
 
-ReactDOM.render(<h1 className="test">Hello from React</h1>, document.getElementById('react-root'));
+const render = Component => {
+  ReactDOM.render(
+    <Component />,
+    document.getElementById("react-root")
+  );
+};
+
+render(Counter);
